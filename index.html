@@ -38,17 +38,25 @@
 										</header>
 
 										<p>
-											I am an Electrical and Computer Engineering student at the University of Calgary, currently completing a 16 month co-op at TC Energy based in Calgary. I will finish my co-op and begin the fourth year of my B.Sc. in September 2022. I am very passionate about computer systems and digital design and actively looking for internship opportunities in that area.
-
-										<p>
-											I am currently a research assistant in Dr. Benjamin Tan's research group, working on ways to detect hardware security weaknesses earlier in the hardware design cycle. So far, this has involved building a background in security, improving my skills in digital design/verification as well as exploring literature on hardware security. I have explored security topics ranging from confidentiality, integrity and availability to hardware Information flow tracking and fuzzing and digital systems design components like JTAG, RISC-V ISA, AXI, etc. Part of my research activities has also involved participating in the IEEE HOST Security Challenge and HACK@DAC2022, two competitions where I was provided 2 state-of-the-art open source RISC-V SoCs and tasked with finding exploitable security bugs. 
+											I am an Electrical and Computer Engineering student at the University of Calgary, currently completing a 16 month co-op at TC Energy based in Calgary. I will finish my co-op and begin the fourth year of my B.Sc. in September 2022, after which I will be pursuing graduate studies. 
 										</p>
-
+										<p>
+											I am currently a research assistant in Dr. Benjamin Tan's research group, working on ways to detect hardware security weaknesses earlier in the hardware design cycle. So far, this has involved building a background in security, improving my skills in digital design/verification as well as exploring literature on hardware security. I have explored security topics ranging from confidentiality, integrity and availability to hardware Information flow tracking and fuzzing and digital systems design components like JTAG, RISC-V ISA, AXI, etc. 
+										</p>
+										
+										<p>											
+											I have also begun working on another research project, collaborating with a PhD student from New York University, where we are investigating the security implications of High level synthesis tools and developing ways to automatically detect and repair security vulnerabilities introduced by these tools. Stay tuned for updates!
+										</p>
 										<p>Please contact me if you have any questions, resource/project recommendations, or just want to connect/chat!</p>	
 										<ul class="actions">
 											<li><a href="./Joey_Ah-kiow_Resume.pdf" class="button fit icon solid fa-download" download>Download my resume</a></li>
 											<li><a href="./Joey_Ah-kiow_Transcript.pdf" class="button fit icon solid fa-download" download>Download my transcript</a></li>
 										</ul>
+									</div>
+									<div>
+										<span class="image fit">
+											<img src="images/headshot.PNG" alt="headshot photo" style="max-height: 600px; width: auto;">
+										</span>
 									</div>
 								</section>
 
@@ -59,6 +67,16 @@
 									</header>
 									<div class="posts">
 										<article>
+											<span class="image fit"><img src="images/hackdac22.jpg" alt="" /></span>											\
+											<h3>Hack@DAC 2022</h3>
+											<p>
+												Hack@DAC is the world's largest hardware security capture the flag competition and consists of two phases. Phase I is completed remotely, and the top performing teams are invited to the Design Automation Conference (DAC) to participate in phase II. In phase 1, I was given an security-enhanced OpenPiton/CVA6 SoC design with intentional security vulnerabilities inserted by experts from Intel and tasked with completing its security verification. I followed a systematic approach, developed using the skills and knowledge gained through my research work and was able to finish phase I in third place.
+											</p>
+											<p>
+												In phase II, I was given Google's OpenTitan Root of Trust (RoT) SoC and tasked with completing its security verification again, this time in an intensive 48 hour period. I finished the competition in second place, with PhD teams from New York University and University of Texas Dallas finishing in first and third place respectively. 
+											</p>
+										</article>
+										<!-- <article>
 											<span class="image fit"><img src="images/IMG_3744.jpg" alt="" /></span>
 											<h3>RISC-V pipelined processor</h3>
 											<p>I am currently working on a pipelined five-stage, RV32I compliant RISC-V processor using SystemVerilog. My approach has been to first establish and build the datapath and control capable of running the instructions, dealing with hazards, exceptions and interrupts and then begin working on optimizations like implementing a branch predictor, specific adder algorithm, etc. Eventually I would also like to extend the instruction set so that it is RV32IM compliant, which will require a FPU unit.</p>
@@ -73,15 +91,7 @@
 											<ul class="actions">
 												<li><a href="https://github.com/joeya20/riscv_processor" class="button" target="_blank">GitHub</a></li>
 											</ul>
-										</article>
-										<article>
-											<span class="image fit"><img src="images/06_countdown_timer.gif" alt="" /></span>
-											<h3>Countdown Timer</h3>
-											<p>This is the first project I've completed using SystemVerilog, and the first FSM I've implemented using an HDL. This project uses two pushbuttons and one switch as inputs - the switch is used as a reset, and the two pushbuttons are used as a start/stop and to increment the timer. The current value of the timer is displayed on four 7-segment displays, two for minutes (0-99) and two for seconds (0-59). When the end of the timer is reached, an array of LEDs blinks at a 1 Hz frequency and 50% duty cycle.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/FPGA-countdown-timer" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article>
+										</article> -->
 										<article>
 											<span class="image fit"><img src="images/02_FPGA_proximity_buzzer.png" alt="" /></span>
 											<h3>Proximity-controlled System</h3>
@@ -89,6 +99,14 @@
 											<p>An ADC was used to read the proximity sensor output and was converted to a distance value using a LUT obtained using experimental values and curve fitting. The value read from the sensor was also displayed on the 7-segment displays, as either a voltage or distance value, and used to control the frequency of the buzzer and the brightness of the LEDs using PWM.</p>
 											<ul class="actions">
 												<li><a href="https://github.com/joeya20/ENEL453/tree/main/ENEL%20453%20Lab%204" class="button" target="_blank">GitHub</a></li>
+											</ul>
+										</article>
+										<article>
+											<span class="image fit"><img src="images/06_countdown_timer.gif" alt="" /></span>
+											<h3>Countdown Timer</h3>
+											<p>This is the first project I've completed using SystemVerilog, and the first FSM I've implemented using an HDL. This project uses two pushbuttons and one switch as inputs - the switch is used as a reset, and the two pushbuttons are used as a start/stop and to increment the timer. The current value of the timer is displayed on four 7-segment displays, two for minutes (0-99) and two for seconds (0-59). When the end of the timer is reached, an array of LEDs blinks at a 1 Hz frequency and 50% duty cycle.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/joeya20/FPGA-countdown-timer" class="button" target="_blank">GitHub</a></li>
 											</ul>
 										</article>
 										<article>
@@ -144,7 +162,12 @@
 										<li class="icon solid fa-home">Calgary, AB</li>
 									</ul>
 								</section>
+								
+							<footer id="footer">
+								<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
 						</div>
+						
 					</div>
 
 			</div>
