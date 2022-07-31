@@ -19,158 +19,150 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-
 							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Joey</strong> Ah-kiow</a>
-									<ul class="icons">
-										<!-- <li><a href="https://www.github.com/joeya20" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-										<li><a href="https://www.linkedin.com/in/joeyah-kiow" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li> -->
-									</ul>
-								</header>
+							<header id="header">
+								<a href="index.html" class="logo"><strong>Joey</strong> Ah-kiow</a>
+							</header>
 
 							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Joey!</h1>
-											<p>Electrical and Computer Engineering Student</p>
-										</header>
-
-										<p>
-											I am an Electrical and Computer Engineering student at the University of Calgary, currently completing a 16 month co-op at TC Energy based in Calgary. I will finish my co-op and begin the final year of my degree in September 2022.
-										</p>
-										<p>
-											I am currently a research assistant in Dr. Benjamin Tan's research group, working on ways to automatically detect security vulnerabilities in hardware designs. We are particularly interested in developing static HDL code scanners. This has involved building a background in security, improving my skills in digital design/verification as well as exploring hardware security literature. I have also spent some time reviewing open-source SoC designs like OpenPiton/CVA6 and other security-critical digital system components like JTAG, AES, HMAC, SHA2/3.
-										</p>										
-										<p>											
-											I have also begun working on another research project, collaborating with a PhD student from New York University, where we are investigating the security implications of High level synthesis tools and developing ways to automatically detect and repair security vulnerabilities introduced by these tools. Stay tuned for updates!
-										</p>
-										<p>
-											I have become very interested in hardware security, a field that is still in its early stages and where there is so much work to be done, but that can have so much impact on our day-to-day lives. I hope to go into graduate studies after graduation and continue working on tools and methodologies for automatic vulnerability detection and mitigation.
-										</p>
-										<p>Please contact me if you want to connect!</p>	
-										<ul class="actions">
-											<li><a href="./Joey_Ah-kiow_CV.pdf" class="button fit icon solid fa-download" download>Download my academic CV</a></li>
-											<li><a href="./Joey_Ah-kiow_Transcript.pdf" class="button fit icon solid fa-download" download>Download my transcript</a></li>
-										</ul>
-									</div>
-									<div>
-										<span class="image fit">
-											<img src="images/headshot.PNG" alt="headshot photo" style="max-height: 600px; width: auto;">
-										</span>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section id="projects">
-									<header class="major">
-										<h2>Projects</h2>
+							<section id="banner">
+								<!-- About me -->
+								<div class="content">
+									<header>
+										<h1>Hi, I’m Joey!</h1>
+										<p>Electrical and Computer Engineering Student</p>
 									</header>
-									<div class="posts">
-										<article>
-											<span class="image fit"><img src="images/hackdac22.jpg" alt="" /></span>											\
-											<h3>Hack@DAC 2022</h3>
-											<p>
-												Hack@DAC is the world's largest hardware security capture the flag competition and consists of two phases. Phase I is completed remotely, and the top performing teams are invited to the Design Automation Conference (DAC) to participate in phase II. In phase 1, I was given an security-enhanced OpenPiton/CVA6 SoC design with intentional security vulnerabilities inserted by experts from Intel and tasked with completing its security verification. I followed a systematic approach, developed using the skills and knowledge gained through my research work and was able to finish phase I in third place.
-											</p>
-											<p>
-												In phase II, I was given Google's OpenTitan Root of Trust (RoT) SoC and tasked with completing its security verification again, this time in an intensive 48 hour period. I finished the competition in second place, with PhD teams from New York University and University of Texas Dallas finishing in first and third place respectively. 
-											</p>
-										</article>
-										<!-- <article>
-											<span class="image fit"><img src="images/IMG_3744.jpg" alt="" /></span>
-											<h3>RISC-V pipelined processor</h3>
-											<p>I am currently working on a pipelined five-stage, RV32I compliant RISC-V processor using SystemVerilog. My approach has been to first establish and build the datapath and control capable of running the instructions, dealing with hazards, exceptions and interrupts and then begin working on optimizations like implementing a branch predictor, specific adder algorithm, etc. Eventually I would also like to extend the instruction set so that it is RV32IM compliant, which will require a FPU unit.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/riscv_processor" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article>
-										<article>
-											<span class="image fit"><img src="images/ariane_new.png" alt="" /></span>
-											<h3>IEEE International Symposium on Hardware Oriented Security and Trust (HOST) Security Challenge - SoC Track</h3>
-											<p>The competition provided an SoC that has possible security concerns and bugs. The task was to find as many of these possible bugs as possible and determine possible impact and mitigations. Through this competition, I became very familiar with an <a href="https://github.com/openhwgroup/cva6">open-source RISC-V based SoC</a> and the various RISC-V Specifications (unprivileged, privileged, debug). I also explored embedded system topics like JTAG. My debugging approach consisted mainly of manual code review of Verilog/SystemVerilog code and simulations by running C code that leveraged the RISC-V toolchain.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/riscv_processor" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article> -->
-										<article>
-											<span class="image fit"><img src="images/02_FPGA_proximity_buzzer.png" alt="" /></span>
-											<h3>Proximity-controlled System</h3>
-											<p>This FPGA project utilized an infared proximity sensor, two switches and two pushbuttons as inputs, and a buzzer, four 7-segment displays and an LED array as outputs. </p>
-											<p>An ADC was used to read the proximity sensor output and was converted to a distance value using a LUT obtained using experimental values and curve fitting. The value read from the sensor was also displayed on the 7-segment displays, as either a voltage or distance value, and used to control the frequency of the buzzer and the brightness of the LEDs using PWM.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/ENEL453/tree/main/ENEL%20453%20Lab%204" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article>
-										<article>
-											<span class="image fit"><img src="images/06_countdown_timer.gif" alt="" /></span>
-											<h3>Countdown Timer</h3>
-											<p>This is the first project I've completed using SystemVerilog, and the first FSM I've implemented using an HDL. This project uses two pushbuttons and one switch as inputs - the switch is used as a reset, and the two pushbuttons are used as a start/stop and to increment the timer. The current value of the timer is displayed on four 7-segment displays, two for minutes (0-99) and two for seconds (0-59). When the end of the timer is reached, an array of LEDs blinks at a 1 Hz frequency and 50% duty cycle.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/FPGA-countdown-timer" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article>
-										<article>
-											<span class="image fit"><img src="images/01_PIC_multimeter.png" alt="" /></span>
-											<h3>PIC-based digital multimeter</h3>
-											<p>This project is a PIC16 based multimeter that can measure DC voltage and resistance. It reads an input voltage using an ADC and outputs a voltage/resistance value to a TeraTerm window using a UART module. The voltage it can read is constrained by the power rails(0-3.3V) and the upper limit of the resistance it can read was determined experimentally and is most likely due to a combination of low supply voltage and lack of precision. The system switches between three states: Idle, Voltmeter, and Ohmmeter, and was programmed to be as power efficient as possible through the use of interrupts and proper clock management.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/joeya20/ENCM511/tree/main/AppProject2.X" class="button" target="_blank">GitHub</a></li>
-											</ul>
-										</article>
-										<article>
-											<span class="image fit"><img src="images/03_REJOY.png" alt="" /></span>
-											<h3>REJOY Fitness Tracker</h3>
-											<p>This project is an Arduino-based wearable fitness tracker and was completed during the Winter 2021 Semester. The device is a fully functional wearable fitness tracker that measures and stores data like heart rate and blood oxygen level using an off the shelf sensor, and steps taken using the accelerometer and an algorithm to convert movement to steps. It also integrated other components like an OLED display, a Real Time Clock (RTC), a rotary encoder, an SD card module, a BLE module, and a 5V regulated power supply consisting of a LiPo battery and a charger board.</p>
-											
-											<p>The OLED and rotary encoder served as the device UI, displaying data and time, and switching between modes. The data readings were stored locally on the device using the SD card module and could connect to another device using Bluetooth to display the data using a web-based UI for meaningful data visualizations and trends. The Design Specification is available for more detailed information!</p>
-											<ul class="actions">
-												<li><a href="./REJOY_Design_Specification.pdf" class="button icon solid fa-download" download>Download Design Spec</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-								
 
+									<p>
+										I am an Electrical and Computer Engineering student at the University of Calgary. I am currently a Pipe Integrity Intern at TC Energy, based in Calgary. I will finish my co-op and begin the final year of my degree in September 2022.
+									</p>
+									<p>
+										I am currently a research assistant in Dr. Benjamin Tan's research group, working on ways to automatically detect security vulnerabilities in hardware designs. We are particularly interested in developing static "no context" HDL code scanners. This has involved building a background in security, improving my skills in digital design/verification as well as exploring hardware security literature. I have also spent some time reviewing open-source SoC designs like OpenPiton/CVA6 and other security-critical digital system components like JTAG, AES, HMAC, SHA2/3.
+									</p>
+									<p>
+										I have also begun working on another research project, collaborating with a PhD student from New York University, where we are investigating the security implications of High level synthesis tools and developing ways to automatically detect and repair security vulnerabilities introduced by these tools. Stay tuned for updates!
+									</p>
+									<p>
+										I have become very interested in hardware security, a field that is still in its early stages and where there is so much work to be done, but that can have so much impact on our day-to-day lives. I hope to go into graduate studies after graduation and continue working on tools and methodologies for automatic vulnerability detection and mitigation.
+									</p>
+									<p>Please contact me if you want to connect!</p>
+									<ul class="actions">
+										<li><a href="./Joey_Ah-kiow_CV.pdf" class="button fit icon solid fa-download" download>Download my academic CV</a></li>
+										<li><a href="./Joey_Ah-kiow_Transcript.pdf" class="button fit icon solid fa-download" download>Download my transcript</a></li>
+									</ul>
+								</div>
+								<!-- Picture -->
+								<div>
+									<span class="image fit">
+										<img src="images/headshot.PNG" alt="headshot photo" style="max-height: 600px; width: auto;">
+									</span>
+								</div>
+							</section>
+
+							<!-- Projects -->
+							<section id="projects">
+								<header class="major">
+									<h2>Projects</h2>
+								</header>
+								<div class="posts">
+									<article>
+										<span class="image fit"><img src="images/hackdac22.jpg" alt="" /></span>											\
+										<h3>Hack@DAC 2022</h3>
+										<p>
+											Hack@DAC is the world's largest hardware security capture the flag competition and consists of two phases. Phase I is completed remotely, and the top performing teams are invited to the Design Automation Conference (DAC) to participate in phase II. In phase 1, I was given a security-enhanced <a href="https://github.com/PrincetonUniversity/openpiton">OpenPiton/CVA6 SoC</a> with intentional security vulnerabilities inserted by experts from Intel and tasked with completing its security verification. I followed a systematic approach, developed using the skills and knowledge gained through my research work and was able to finish phase I in third place.
+										</p>
+										<p>
+											In phase II, I was given <a href="https://opentitan.org/">Google's OpenTitan Root of Trust (RoT) SoC</a> and tasked with completing its security verification, this time in an intensive 48 hour period. I finished the competition in second place, with PhD teams from New York University and University of Texas Dallas finishing in first and third place respectively.
+										</p>
+									</article>
+									<!-- <article>
+										<span class="image fit"><img src="images/IMG_3744.jpg" alt="" /></span>
+										<h3>RISC-V pipelined processor</h3>
+										<p>I am currently working on a pipelined five-stage, RV32I compliant RISC-V processor using SystemVerilog. My approach has been to first establish and build the datapath and control capable of running the instructions, dealing with hazards, exceptions and interrupts and then begin working on optimizations like implementing a branch predictor, specific adder algorithm, etc. Eventually I would also like to extend the instruction set so that it is RV32IM compliant, which will require a FPU unit.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/joeya20/riscv_processor" class="button" target="_blank">GitHub</a></li>
+										</ul>
+									</article>
+									<article>
+										<span class="image fit"><img src="images/ariane_new.png" alt="" /></span>
+										<h3>IEEE International Symposium on Hardware Oriented Security and Trust (HOST) Security Challenge - SoC Track</h3>
+										<p>The competition provided an SoC that has possible security concerns and bugs. The task was to find as many of these possible bugs as possible and determine possible impact and mitigations. Through this competition, I became very familiar with an <a href="https://github.com/openhwgroup/cva6">open-source RISC-V based SoC</a> and the various RISC-V Specifications (unprivileged, privileged, debug). I also explored embedded system topics like JTAG. My debugging approach consisted mainly of manual code review of Verilog/SystemVerilog code and simulations by running C code that leveraged the RISC-V toolchain.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/joeya20/riscv_processor" class="button" target="_blank">GitHub</a></li>
+										</ul>
+									</article> -->
+									<article>
+										<span class="image fit"><img src="images/02_FPGA_proximity_buzzer.png" alt="" /></span>
+										<h3>Proximity-controlled System</h3>
+										<p>This FPGA project utilized an infared proximity sensor, two switches and two pushbuttons as inputs, and a buzzer, four 7-segment displays and an LED array as outputs. </p>
+										<p>An ADC was used to read the proximity sensor output and was converted to a distance value using a LUT obtained using experimental values and curve fitting. The value read from the sensor was also displayed on the 7-segment displays, as either a voltage or distance value, and used to control the frequency of the buzzer and the brightness of the LEDs using PWM.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/joeya20/ENEL453/tree/main/ENEL%20453%20Lab%204" class="button" target="_blank">GitHub</a></li>
+										</ul>
+									</article>
+									<article>
+										<span class="image fit"><img src="images/06_countdown_timer.gif" alt="" /></span>
+										<h3>Countdown Timer</h3>
+										<p>This is the first project I've completed using SystemVerilog, and the first FSM I've implemented using an HDL. This project uses two pushbuttons and one switch as inputs - the switch is used as a reset, and the two pushbuttons are used as a start/stop and to increment the timer. The current value of the timer is displayed on four 7-segment displays, two for minutes (0-99) and two for seconds (0-59). When the end of the timer is reached, an array of LEDs blinks at a 1 Hz frequency and 50% duty cycle.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/joeya20/FPGA-countdown-timer" class="button" target="_blank">GitHub</a></li>
+										</ul>
+									</article>
+									<article>
+										<span class="image fit"><img src="images/01_PIC_multimeter.png" alt="" /></span>
+										<h3>PIC-based digital multimeter</h3>
+										<p>This project is a PIC16 based multimeter that can measure DC voltage and resistance. It reads an input voltage using an ADC and outputs a voltage/resistance value to a TeraTerm window using a UART module. The voltage it can read is constrained by the power rails(0-3.3V) and the upper limit of the resistance it can read was determined experimentally and is most likely due to a combination of low supply voltage and lack of precision. The system switches between three states: Idle, Voltmeter, and Ohmmeter, and was programmed to be as power efficient as possible through the use of interrupts and proper clock management.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/joeya20/ENCM511/tree/main/AppProject2.X" class="button" target="_blank">GitHub</a></li>
+										</ul>
+									</article>
+									<article>
+										<span class="image fit"><img src="images/03_REJOY.png" alt="" /></span>
+										<h3>REJOY Fitness Tracker</h3>
+										<p>This project is an Arduino-based wearable fitness tracker and was completed during the Winter 2021 Semester. The device is a fully functional wearable fitness tracker that measures and stores data like heart rate and blood oxygen level using an off the shelf sensor, and steps taken using the accelerometer and an algorithm to convert movement to steps. It also integrated other components like an OLED display, a Real Time Clock (RTC), a rotary encoder, an SD card module, a BLE module, and a 5V regulated power supply consisting of a LiPo battery and a charger board.</p>
+										
+										<p>The OLED and rotary encoder served as the device UI, displaying data and time, and switching between modes. The data readings were stored locally on the device using the SD card module and could connect to another device using Bluetooth to display the data using a web-based UI for meaningful data visualizations and trends. The Design Specification is available for more detailed information!</p>
+										<ul class="actions">
+											<li><a href="./REJOY_Design_Specification.pdf" class="button icon solid fa-download" download>Download Design Spec</a></li>
+										</ul>
+									</article>
+								</div>
+							</section>
 						</div>
 					</div>
 
 				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="#header">About</a></li>
-										<li><a href="#projects">Projects</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<ul class="contact">
-										<li class="icon brands alt fa-github"><a href="https://www.github.com/joeya20" target="_blank">GitHub</a></li>
-										<li class="icon brands alt fa-linkedin-in"><a href="https://www.linkedin.com/in/joeyah-kiow"target="_blank">LinkedIn</a></li>
-										<li class="icon solid fa-envelope"><a href="mailto:joey.ahkiow@gmail.com">joey.ahkiow@gmail.com</a></li>
-										<li class="icon solid fa-phone">(403)-918-8778</li>
-										<li class="icon solid fa-home">Calgary, AB</li>
-									</ul>
-								</section>
-								
-							<footer id="footer">
-								<p class="copyright">&copy; Joey Ah-kiow. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-							</footer>
-						</div>
-						
-					</div>
+				<div id="sidebar">
+					<div class="inner">
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="#header">About</a></li>
+									<li><a href="#projects">Projects</a></li>
+								</ul>
+							</nav>
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<ul class="contact">
+									<li class="icon brands alt fa-github"><a href="https://www.github.com/joeya20" target="_blank">GitHub</a></li>
+									<li class="icon brands alt fa-linkedin-in"><a href="https://www.linkedin.com/in/joeyah-kiow"target="_blank">LinkedIn</a></li>
+									<li class="icon solid fa-envelope"><a href="mailto:joey.ahkiow@gmail.com">joey.ahkiow@gmail.com</a></li>
+									<li class="icon solid fa-phone">(403)-918-8778</li>
+									<li class="icon solid fa-home">Calgary, AB</li>
+								</ul>
+							</section>
+						<!-- footer -->
+						<footer id="footer">
+							<p class="copyright">&copy; Joey Ah-kiow. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</footer>
+					</div>					
+				</div>
 
 			</div>
 
